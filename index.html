@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" charset="utf-8">
+<head>
+	<title>MonoJS by Kadir 'Akkara' Yardımcı</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="mono.min.js"></script>
+	<style>
+		body {
+			text-align:center ;
+			font-family:Helvetica,Arial,sans-serif ;
+			padding-bottom:150px ;
+		}
+	</style>
+	<script>
+		jQuery(document).ready(function(){
+			$("#blackandwhite img").mono({color:"#ffffff"}) ;
+			$("#gradientmap img").mono({color:"#fd7c00",black:"#4c0e4a"}) ;
+			$("#lighten img").mono({color:"#ffffff",black:"#ff0000"}) ;
+		}) ;
+	</script>
+</head>
+<body>
+	<div id="content">
+		<h1>MonoJS v1.0.1</h1>
+		<p class="desc">Monolize images with two colors via canvas element.<br />
+			by Kadir 'Akkara' Yardımcı, 2013</p>
+		<p class="desc"><a href="http://github.com/akkara/MonoJS">MonoJS on GITHUB</a></p>
+		<p id=original><img src="my_w_by_mausclea.jpg" width=266 height=400 /><br />
+			Original image by <a href="http://mausclea.deviantart.com/art/Soundcheck-II-156722762">MausClea</a></p>
+		<p id=blackandwhite><img src="my_w_by_mausclea.jpg" width=266 height=400 /></p>
+		<pre>$("#blackandwhite img").mono({color:"#ffffff"})</pre>
+		<p id=gradientmap><img src="my_w_by_mausclea.jpg" width=266 height=400 /></p>
+		<pre>$("#gradientmap img").mono({color:"#fd7c00",black:"#4c0e4a"})</pre>
+		<p id=lighten><img src="my_w_by_mausclea.jpg" width=266 height=400 /></p>
+		<pre>$("#lighten img").mono({color:"#ffffff",black:"#ff0000"})</pre>
+	</div>
+</body>
+</html>
