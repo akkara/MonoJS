@@ -19,3 +19,5 @@ Monolize images with two colors via canvas element
     },function(images,error){  
         // Callback function  
     }) ;
+
+Visit <a href="http://akkara.github.com/MonoJS/">Demo Page</a>
